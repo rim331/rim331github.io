@@ -1,84 +1,27 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Resume Website</title>
-    <link rel="stylesheet" href="cssweb.css">
+  <meta charset="UTF-8">
+  <title>Iconfinder Search App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
+  <div class="container">
+    <h1>🔍 Iconfinder Icon Search</h1>
+    <form id="search-form">
+      <input type="text" id="search-query" placeholder="Enter icon keyword..." required>
+      <button type="submit">Search</button>
+    </form>
 
-        <div class="img-area">
-             <img src="5899881706071116468.jpg"alt="Reem Abumandeel, Software Engineering student" height="170" width="170">
-        </div>
-        <header>
-            <h1>Reem Abumandeel</h1>
-            <h3>Software Engineering Student</h3>
-        </header>
-
-
-
-        <div class="main">
-            <div class="left">
-
-                <h2>Personal Information</h2>
-                <p><strong>Name :</strong> Reem Khalid Abumandeel</p>
-                <p><strong>Age :</strong> 21</p>
-                <p><strong>Location :</strong>Jeddah, Saudi Arabia</p>
-                
-                <h2> Aims & objectives</h2>
-                <ol>
-                    <li>develop efficient, useful, and high-quality software applications.</li>
-                    <li>Apply my programming skills in real-world software development projects</li>
-                    <li>Gain hands-on experience in Software Engineering</li>
-                </ol>
-                
-
-                <h2>Education & certificates</h2>
-                <h3> EF Level 9 – Intermediate (CEFR Level B1)</h3>
-                <p>Institution: EF English Live, <br>September 2019</p>
-                <h3>Bachelor in Software Engineering</h3>
-                <p>University of Jeddah, 2022-2026</p> <br>
-
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                    <li>Java</li>
-                    <li>logo design</li>
-                </ul>
-                <h2>Languages</h2>
-
-                <ul>
-                    <li>Arabic</li>
-                    <li>English</li>
-                </ul>
-
-            </div>
-            <div class="right">
-                
-
-                <h2>Projects</h2>
-                <h3>1-Terhal </h3>
-                <p>Description:Terhal is a travel planning application designed to simplify trip planning and management in Saudi Arabia. The system serves as a personalized travel agent</p>
-                <img src="5911295873718011649.jpg" alt="Screenshot of Terhal travel planning app " width="300" height="300">
-                <br>
-                <br>
-                <h3>2-Task Manager App </h3>
-                <p>Description: A Task Manager Application as part of the Object-Oriented Programming (OOP) course to assist students in writing and organizing their tasks effectively.</p>
-
-                <h2>Contact Information</h2>
-                <p><strong>📧 Email :</strong> <a href="mailto:reemkhalid557@gmail.com" > reemkhalid557@gmail.com</a></p>
-                <p><strong>📱Phone :</strong> <a href="tel:+966558803722">+966 55 880 3722</a></p>
-                <p><strong>🔗LinkedIn :</strong><a href="https://www.linkedin.com/in/ريم-خ-38a866343" target="_blank"> My LinkedIn</a></p>
-                
-                
-
-        </div>
-        </div>
+    <div class="controls">
+      <button id="clear-btn">🧹 Clear Results</button>
+      <button id="random-btn">🎲 Random Icon</button>
     </div>
 
+    <div id="icon-results"></div>
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
